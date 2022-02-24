@@ -1,4 +1,6 @@
 # 3AHINF-POS-Projekt: E(P)IK Base Defense
+![image](https://user-images.githubusercontent.com/98883966/155514245-b823dccc-c521-4627-ad59-05929faa4622.png)
+
 ## Mitglieder:
 1. Amir
 2. Florian
