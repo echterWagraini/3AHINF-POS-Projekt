@@ -1,4 +1,4 @@
-# 3AHINF-POS-Projekt E(P)IK Base Defense
+# 3AHINF-POS-Projekt: E(P)IK Base Defense
 ## Mitglieder:
 1. Amir
 2. Florian
