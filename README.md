@@ -1,5 +1,5 @@
 # 3AHINF-POS-Projekt
-# Mitglieder:
+## Mitglieder:
 1. Amir
 2. Florian
 3. Vitus
