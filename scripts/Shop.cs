@@ -95,6 +95,21 @@ public class Shop : MonoBehaviour
             gameManager.manager.money -= footAllyCost;
         }
     }
+    
+    public void buyKanone()
+    {
+        if(gameManager.manager.money >= kanoneCost)
+        {
+            Kanone.SetActive(true);
+            gameManager.manager.money -= kanoneCost;
+            Debug.Log("Kanone gekauft");
+            GameObject.Find("buyKanone").SetActive(false);
+        }
+        else
+        {
+            buyStatus.GetComponent<UnityEngine.UI.Text>().text = "Not Enough Money!";
+        }
+    }
 
     public bool buyable(float price, Transform prefab)
     {
@@ -136,20 +151,5 @@ public class Shop : MonoBehaviour
             Instantiate(BuyManager.manager.GetAllyToSpawn(), allyspawnpoint.position, allyspawnpoint.rotation);
         }
         
-    }
-
-    public void buyKanone()
-    {
-        if(gameManager.manager.money >= kanoneCost)
-        {
-            Kanone.SetActive(true);
-            gameManager.manager.money -= kanoneCost;
-            Debug.Log("Kanone gekauft");
-            GameObject.Find("buyKanone").SetActive(false);
-        }
-        else
-        {
-            buyStatus.GetComponent<UnityEngine.UI.Text>().text = "Not Enough Money!";
-        }
     }
 }
